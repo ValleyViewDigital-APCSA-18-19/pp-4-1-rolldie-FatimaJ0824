@@ -1,0 +1,30 @@
+import java.util.Random; 
+public class Die
+{
+	  private int result; 
+	  private int sides; 
+
+	  public Die()
+	  {
+
+	  }
+	  public Die(int sides)
+	  {
+	    this.sides = sides;
+	    roll();
+	    toString();
+
+	  }
+
+	  public void roll()
+	  {
+	    Random num = new Random();
+	    result = 1 + num.nextInt(sides);
+
+	  }
+
+	  public String toString()
+	  {
+	    return "SideNum: " + result; 
+	  }
+	}

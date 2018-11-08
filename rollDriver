@@ -1,0 +1,16 @@
+import java.util.*;
+public class rollDriver
+{
+  public static void main (String[] args)
+  {
+    int sides; 
+
+    Scanner read = new Scanner(System.in);
+    System.out.print("Enter number of sides: ");
+    sides = read.nextInt();
+
+    Die myDie = new Die(sides);
+    System.out.print(myDie.toString()); 
+  }
+}
+
